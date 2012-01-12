@@ -55,7 +55,7 @@ class userActions extends sfActions
         $this->forward404Unless($user = Doctrine_Core::getTable('user')->find(array($request->getParameter('id'))), sprintf('Object user does not exist (%s).', $request->getParameter('id')));
         $this->form = new userForm($user);
 
-        $this->processForm($request, $this->form);
+        $this->processForm2($request, $this->form);
 
         $this->setTemplate('edit');
     }
@@ -109,12 +109,12 @@ class userActions extends sfActions
         $user->setLastname($request->getPostParameter('user[lastname]',false));
         $user->setLogin($request->getPostParameter('user[login]',false));
         $user->setLocked('0');
-        if($request->getPostParameter('user[locked]',false) === "on");
-            $user->setLocked('0');
-        if($request->getPostParameter('password',false) != ''){
-            $user->setPassword($request->getPostParameter('user[password]',false));
+        //if($request->getPostParameter('user[locked]',false) === "on");
+        //    $user->setLocked('0');
+        if($request->getPostParameter('user[password]','') != ''){
+            $user->setClairPassword($request->getPostParameter('user[password]',false));
         }
         $user->save();
-        //$this->redirect('user/edit?id='.$user->getId());
+        $this->redirect('user/edit?id='.$user->getId());
     }
 }

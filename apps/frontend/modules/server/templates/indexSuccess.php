@@ -19,4 +19,4 @@
   </tbody>
 </table>
 
-  <a href="<?php echo url_for('server/new') ?>">New</a>
+<a  class="button" href="<?php echo url_for('server/new') ?>"><span>New</span></a>

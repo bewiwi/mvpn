@@ -12,7 +12,7 @@ foreach ($user_servers as $serv){
     <table>
         <tr>
             <td>
-                <select multiple="multiple" id="sel1" name="server_no[]">
+                <select multiple="multiple" id="el03" name="server_no[]">
                     <?php foreach( $servers as $server): ?>
                     <option value="<?php echo $server->getId(); ?>" <?php if(in_array($server->getId(),$tmpServers)) echo 'selected="selected"' ?>>
                         <?php echo $server->getName(); ?>

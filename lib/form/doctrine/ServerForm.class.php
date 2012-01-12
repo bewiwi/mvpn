@@ -12,5 +12,13 @@ class ServerForm extends BaseServerForm
 {
   public function configure()
   {
+      $this->widgetSchema['proto'] = new sfWidgetFormSelect(array('choices' => array(
+                                                                                    'tcp'=>'TCP',
+                                                                                    'udp'=>'UDP',
+                                                                                    )
+                                                                 )
+                                                            );
+      $this->widgetSchema['proto']->addOption('TCP','tcp');
+      $this->widgetSchema['proto']->addOption('UDP','udp');
   }
 }

@@ -12,7 +12,7 @@
  */
 class User extends BaseUser
 {
-    function test() {
-        return 'test';
+    function setClairPassword($password) {
+        return $this->setPassword(sha1($password));
     }
 }

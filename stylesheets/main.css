@@ -1,0 +1,13 @@
+body{
+    padding-top:50px;
+}
+
+.pointer{cursor:pointer;}
+.valign-top{vertical-align:top;}
+
+/*Fonts*/
+.txt11{font-size:11px;}
+
+/*margins & paddings*/
+.padding-b-20{padding-bottom:20px;}
+.inline-block{display:inline-block;}

@@ -47,3 +47,7 @@ function viewServerList(userID) {
 	$("#popup-container").html(data);
 	$("#popup-servers").dialog({ height: "auto", width: 500, resizable: false });
 }
+
+function displayDemo() {
+	$("#demo").toggle();	
+}

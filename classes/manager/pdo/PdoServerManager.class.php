@@ -75,9 +75,14 @@ class PdoServerManager extends AbstractPdoManager {
 	}
 	
 	public function deleteServer($serverID) {
+			// Supprime le server
 			$query = $this->pdo->prepare("DELETE FROM server WHERE id = :serverid");
 			$query->bindValue(':serverid', $serverID);
-			$query->execute();	
+			$query->execute();
+		
+			$query2 = $this->pdo->prepare("DELETE FROM server_user WHERE server_id = :serverid");
+			$query2->bindValue(':serverid', $serverID);
+			$query2->execute();
 	}
 	
 	public function deleteUserFromServer($userID, $serverID) {

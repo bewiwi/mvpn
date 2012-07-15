@@ -16,7 +16,13 @@
             <div class="span12">
                 <div class="hero-unit">
                     <h2>Simple, Fast and Usefull...</h2>
-                    <p>Curabitur et enim metus, et convallis quam. Morbi malesuada, libero vel mattis eleifend, felis libero elementum ligula, eu tristique leo justo non nibh. Nulla tincidunt dui quis massa sagittis posuere. Vivamus consectetur mi quis eros consequat sodales sollicitudin massa ullamcorper.</p>
+                    <p>Manage your OpenVPN server easily thanks to MyVPN.<br />All simple feature to manage multi OpenVPN server like add/remove server or user are already implemented. If you want a new feature, contact us with our twitter account and we discuss about it.</p>
+                </div>
+                <div id="demo">
+                	<div class="page-header">
+                    	<h2>How to use MyVPN in 3 steps</h2>
+                    </div>
+                    <img src="images/demo.png" alt="MyVPN in 3 steps">
                 </div>
             </div>
         </div>

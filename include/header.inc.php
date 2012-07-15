@@ -20,7 +20,7 @@
        </ul>
        <ul class="nav pull-right">
            <li class="divider-vertical"></li>
-           <li><a href="#">Contact us</a></li> 
+           <li><a href="https://twitter.com/My_VPN" title="Contact Us on Twitter">Contact us</a></li> 
        </ul>
    </div>
 </div>
